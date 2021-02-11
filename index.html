@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <!-- PROJECT REQUIREMENTS:
+    x A header
+      2-4 Buttons
+      1 Input Field and submit button
+      A list of previous guesses
+      A fun design! (this is optional)
+    x A new Github Repository for the Guessing Game -->
+
+<head>
+    <title>Can You Guess It?</title>
+    <script src='main.js' defer></script>
+    <link href='style.css' type='text/css' rel='stylesheet'>
+</head>
+<body>
+    <div id='landing'>
+        <h1>Would you like to play a Guessing Game?</h1>
+        <button type='button' id="play">Let's play!</button>
+    </div>
+    <div id='game'>
+        <h1>Can You Guess My Number?</h1>
+        <h2>Previous Guesses:</h2>
+        <ul id='guesses'></ul>
+        <p id='guessTracker'></p>
+        <div id='buttonRow'>
+            <label for='guess'>Your Guess: </label>
+            <input type='number' min='1' max='100' id='guess' name='guess'>
+            <button type='button' id='guessButton' name='guessButton'>Guess!</button>
+            <button type='button' id='hint' name='hint'>Need a hint?</button>
+        </div>
+        <p id='hintMessage'>Careful, clicking the hint button reduces your guesses to 1!</p>
+    </div>
+    <div id='gameOver'>
+        <h1 id='gameState'>Game State</h1>
+        <h2>Would you like to play again?</h2>
+        <button type="button" id='playAgain' name='playAgain'>Let's play!</button>
+    </div>
+</body>
+</html>

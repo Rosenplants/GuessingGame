@@ -1,0 +1,77 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+
+/* Element Stylings */
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+ul,
+#guessTracker {
+    margin: 2rem 0;
+}
+
+li {
+    width: 200px;
+    margin: auto;
+}
+
+li,
+span,
+label,
+input,
+button,
+p {
+    font-size: 1.75rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    padding: 0.75rem 1rem;
+}
+
+/* Divs */
+#landing {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+#game {
+    display: none;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+#buttonRow {
+    margin: 1rem 0;
+}
+
+#gameOver {
+    display: none;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
