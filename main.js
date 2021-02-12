@@ -152,6 +152,7 @@ function giveHint() {
             }
         }
         document.getElementById('hintMessage').innerText = hintArr.sort((a,b)=> a-b).join(' ');
+        hint = !hint;
     }
 }
 
